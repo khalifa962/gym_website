@@ -1,0 +1,41 @@
+.footer-container {
+  position: relative;
+}
+.footer-container > div:nth-child(3) {
+  width: 26rem;
+  height: 12rem;
+  bottom: 0rem;
+  right: 15%;
+  background-color: red;
+}
+.footer-container > div:nth-child(4) {
+  width: 26rem;
+  height: 12rem;
+  bottom: 0rem;
+  left: 15%;
+}
+.footer-container hr {
+  border: 1px solid #ff1;
+}
+.footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+}
+.social {
+  display: flex;
+  gap: 4rem;
+}
+.social img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.logo-f img {
+  width: 10rem;
+  cursor: pointer;
+}

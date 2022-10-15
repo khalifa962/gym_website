@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+.burger {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.header-menu {
+  display: flex;
+  gap: 2rem;
+  color: #fee;
+  list-style-type: none;
+}
+.header-menu > li {
+  transition: 0.3s;
+  padding: 10px;
+}
+.header-menu > li:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1px 0px #ff0;
+  color: var(--orange);
+}
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .header-menu {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+  }
+}
